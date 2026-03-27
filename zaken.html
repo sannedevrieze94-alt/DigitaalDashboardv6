@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beschermde omgeving</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="dashboard">
+    
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-dot"></div>
+        <div class="brand-sub">Dashboardomgeving voor mensenhandel en ondermijning.</div>
+      </div>
+      <nav class="side-nav"><a href="index.html" class="side-link "><span class="side-icon">◎</span><span>Dashboard</span></a>
+<a href="trends.html" class="side-link "><span class="side-icon">≋</span><span>Trends</span></a>
+<a href="cijfers.html" class="side-link "><span class="side-icon">▦</span><span>Cijfers</span></a>
+<a href="vergelijking.html" class="side-link "><span class="side-icon">⇄</span><span>Vergelijking</span></a>
+<a href="kaart.html" class="side-link "><span class="side-icon">⌖</span><span>Wijken</span></a>
+<a href="contacten.html" class="side-link "><span class="side-icon">◉</span><span>Contacten</span></a>
+<a href="bronnen.html" class="side-link "><span class="side-icon">◈</span><span>Bronnen</span></a>
+<a href="login.html" class="side-link active"><span class="side-icon">◌</span><span>Log In</span></a></nav>
+    </aside>
+    
+    <div class="main">
+      
+      <header class="topbar">
+        <div class="topbar-inner">
+          <div class="tophead">
+            <img src="assets/gemeente_emmen_logo.png" alt="Gemeente Emmen logo">
+            <div>
+              <h1>Beschermde omgeving</h1>
+              <p>Lopende zaken en partneraanhaak</p>
+            </div>
+          </div>
+          <div class="top-actions">
+            <a class="btn" href="contacten.html">Contactpersonen</a>
+            <a class="btn btn-primary" href="login.html">Log In</a>
+          </div>
+        </div>
+      </header>
+    
+      <main class="page">
+        
+
+<section id="protected-denied" class="card">
+  <div class="eyebrow">Afgeschermd</div>
+  <h2>Geen toegang zonder Log In</h2>
+  <p>Deze pagina is bedoeld als illustratie van een beschermde werkomgeving voor lopende zaken. Log eerst in met de demo-gegevens om deze laag te bekijken.</p>
+  <a class="btn btn-primary" href="login.html">Ga naar Log In</a>
+</section>
+
+<section id="protected-content" class="hidden">
+  <section class="card">
+    <div class="eyebrow">Beschermde omgeving</div>
+    <h2>Lopende zaken en partneraanhaak</h2>
+    <p>Deze illustratieve laag laat zien hoe een toekomstige koppeling met een PGAx-achtige werkomgeving eruit zou kunnen zien: met casusstatus, rolverdeling, partneraanhaak, eenvoudige zoekingangen en opvolgacties. Alle onderstaande gegevens zijn fictief en uitsluitend bedoeld voor demo- en presentatiedoeleinden.</p>
+    <div class="top-actions">
+      <button class="btn" id="logout-btn">Uitloggen</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h3>Zoeken op persoon, voertuig of adres</h3>
+      <p>Gebruik één of meer velden om in de demo-registraties te zoeken. Kentekens kunnen direct worden ingevuld.</p>
+    </div>
+    <div class="section-body">
+      <div class="search-card">
+        <div class="search-grid">
+          <div class="field">
+            <label for="searchPerson">Persoon</label>
+            <input id="searchPerson" type="text" placeholder="Bijvoorbeeld Jan de Boer">
+          </div>
+          <div class="field">
+            <label for="searchPlate">Voertuig / kenteken</label>
+            <input id="searchPlate" type="text" placeholder="Bijvoorbeeld K-421-TR">
+          </div>
+          <div class="field">
+            <label for="searchAddress">Adres</label>
+            <input id="searchAddress" type="text" placeholder="Bijvoorbeeld Hoofdstraat 18">
+          </div>
+          <div class="field" style="align-self:end;">
+            <button class="btn btn-primary" id="searchBtn">Zoeken</button>
+          </div>
+        </div>
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h3>Actuele zaken – demo</h3><p>Voorbeeldweergave voor gemachtigde gebruikers.</p></div>
+    <div class="section-body">
+      <table class="table">
+        <thead><tr><th>Casus</th><th>Status</th><th>Regie</th><th>Partner aanhaken</th><th>Opmerking</th></tr></thead>
+        <tbody>
+          <tr><td>Casus MH-001</td><td><span class="badge b-high">Actief</span></td><td>OOV</td><td>Politie, AVIM, Zorgpartner</td><td>Woon-werkafhankelijkheid en signalen uit dossier.</td></tr>
+          <tr><td>Casus MH-002</td><td><span class="badge b-mid">In duiding</span></td><td>Aandachtsfunctionaris</td><td>Arbeidsinspectie, RIEC</td><td>Werkgebied en arbeidsmigranten-context.</td></tr>
+          <tr><td>Casus MH-003</td><td><span class="badge b-low">Monitoren</span></td><td>Sociaal domein</td><td>Zorg- en Veiligheidshuis</td><td>Jeugdkwetsbaarheid en schuldsignalen.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</section>
+
+
+  <section class="section">
+    <div class="section-head"><h3>Actuele zaken – demo</h3><p>Voorbeeldweergave voor gemachtigde gebruikers.</p></div>
+    <div class="section-body">
+      <table class="table">
+        <thead><tr><th>Casus</th><th>Status</th><th>Regie</th><th>Partner aanhaken</th><th>Opmerking</th></tr></thead>
+        <tbody>
+          <tr><td>Casus MH-001</td><td><span class="badge b-high">Actief</span></td><td>OOV</td><td>Politie, AVIM, Zorgpartner</td><td>Woon-werkafhankelijkheid en signalen uit dossier.</td></tr>
+          <tr><td>Casus MH-002</td><td><span class="badge b-mid">In duiding</span></td><td>Aandachtsfunctionaris</td><td>Arbeidsinspectie, RIEC</td><td>Werkgebied en arbeidsmigranten-context.</td></tr>
+          <tr><td>Casus MH-003</td><td><span class="badge b-low">Monitoren</span></td><td>Sociaal domein</td><td>Zorg- en Veiligheidshuis</td><td>Jeugdkwetsbaarheid en schuldsignalen.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</section>
+
+      </main>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

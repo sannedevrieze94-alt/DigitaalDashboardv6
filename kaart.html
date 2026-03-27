@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Risicogebieden per wijk</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="dashboard">
+    
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-dot"></div>
+        <div class="brand-sub">Dashboardomgeving voor mensenhandel en ondermijning.</div>
+      </div>
+      <nav class="side-nav"><a href="index.html" class="side-link "><span class="side-icon">◎</span><span>Dashboard</span></a>
+<a href="trends.html" class="side-link "><span class="side-icon">≋</span><span>Trends</span></a>
+<a href="cijfers.html" class="side-link "><span class="side-icon">▦</span><span>Cijfers</span></a>
+<a href="vergelijking.html" class="side-link "><span class="side-icon">⇄</span><span>Vergelijking</span></a>
+<a href="kaart.html" class="side-link active"><span class="side-icon">⌖</span><span>Wijken</span></a>
+<a href="contacten.html" class="side-link "><span class="side-icon">◉</span><span>Contacten</span></a>
+<a href="bronnen.html" class="side-link "><span class="side-icon">◈</span><span>Bronnen</span></a>
+<a href="login.html" class="side-link "><span class="side-icon">◌</span><span>Log In</span></a></nav>
+    </aside>
+    
+    <div class="main">
+      
+      <header class="topbar">
+        <div class="topbar-inner">
+          <div class="tophead">
+            <img src="assets/gemeente_emmen_logo.png" alt="Gemeente Emmen logo">
+            <div>
+              <h1>Risicogebieden per wijk</h1>
+              <p>Kaartlaag en gebiedsprofielen</p>
+            </div>
+          </div>
+          <div class="top-actions">
+            <a class="btn" href="contacten.html">Contactpersonen</a>
+            <a class="btn btn-primary" href="login.html">Log In</a>
+          </div>
+        </div>
+      </header>
+    
+      <main class="page">
+        
+<section class="section">
+  <div class="section-head"><h3>Risicogebieden per wijk</h3><p>De kaart gebruikt het aangeleverde PNG-bestand als basis voor de wijkrisico-pagina.</p></div>
+  <div class="section-body">
+    <div class="map-card">
+      <img src="assets/emmen_kaart.png" alt="Risicokaart Emmen">
+      <div class="map-overlay">
+        <div class="legend">
+          <span><i class="dot" style="background:#d9534f"></i> Hoog risico</span>
+          <span><i class="dot" style="background:#f0ad4e"></i> Middel risico</span>
+          <span><i class="dot" style="background:#5cb85c"></i> Laag risico</span>
+        </div>
+      </div>
+    </div>
+    <table class="table" style="margin-top:16px">
+      <thead><tr><th>Gebied</th><th>Profiel</th><th>Duiding</th></tr></thead>
+      <tbody>
+        <tr><td>Centrum / Emmermeer / Angelslo</td><td><span class="badge b-high">Verhoogd-hoog</span></td><td>Meer anonimiteit, sociale kwetsbaarheid en stedelijke doorstroom.</td></tr>
+        <tr><td>Bargeres / Zuidbarge / Delftlanden</td><td><span class="badge b-mid">Verhoogd</span></td><td>Combinatie van woonkwetsbaarheid en leefbaarheidsdruk.</td></tr>
+        <tr><td>Barger-Oosterveld / werkzones</td><td><span class="badge b-mid">Verhoogd</span></td><td>Werk- en logistieke context, relevant voor arbeidsuitbuiting.</td></tr>
+        <tr><td>Weerdinge / Emmerschans / buitengebied</td><td><span class="badge b-low">Laag-verhoogd</span></td><td>Minder stedelijke druk, maar mogelijk minder zicht op afgelegen locaties.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+      </main>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
